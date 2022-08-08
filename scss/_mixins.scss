@@ -5,15 +5,15 @@
 }
 
 @mixin box ($width, $height, $color) {
-  width:$width;
-  height:$height ;
-  background-color:$color ;
+  width: $width;
+  height: $height;
+  background-color: $color;
 }
 
 @mixin boxing ($width:400px, $height:300px, $color:red) {
-  width:$width;
-  height:$height ;
-  background-color:$color ;
+  width: $width;
+  height: $height;
+  background-color: $color;
 }
 
 @mixin text-ellipses {
@@ -22,14 +22,95 @@
   white-space: nowrap;
 }
 
-@mixin display-justfiy-alain ($content:flex ,$centr:space-between,$middle:center) {
+@mixin display-justfiy-alain ($content:flex, $centr:space-between, $middle:center) {
   display: $content;
-  justify-content:$centr ;
-  align-items:$middle ;
+  justify-content: $centr;
+  align-items: $middle;
 }
 
 @mixin media-max ($max-width:1440px) {
   @media only screen and (max-width:$max-width) {
     @content;
   }
+}
+
+// #############################################################
+@mixin nav-link {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--san-juan-blue);
+  opacity: 0.7;
+}
+
+@mixin main-link {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+  background-color: #BA4270;
+  box-shadow: 10px 10px 25px -10px #36536b40;
+  border-radius: 24px;
+}
+@mixin main-link-hover{
+  opacity: 0.7;
+}
+@mixin main-link-active{
+  opacity: 0.5;
+}
+@mixin second-link{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+letter-spacing: -0.115385px;
+color: #FBFCFE;
+border: 1px solid #FBFCFE;
+border-radius: 24px;
+}
+@mixin second-link-hover{
+  color: #1B262F;
+  background-color: #FFFFFF;
+border: 1px solid #FBFCFE;
+}
+@mixin second-link-active{
+  opacity: 0.5;
+}
+@mixin third-link{
+  font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: -0.115385px;
+color: var(--san-juan-blue);
+border: 1px solid var(--san-juan-blue);
+border-radius: 24px;
+}
+@mixin third-link-hover{
+  background-color: var(--san-juan-blue);
+}
+@mixin third-link-active {
+opacity: 0.5;
+}
+
+@mixin input-text {
+font-size: 15px;
+line-height: 25px;
+letter-spacing: -0.115385px;
+color: var(--san-juan-blue);
+mix-blend-mode: normal;
+}
+@mixin  main-title  {
+  font-family: "DM Serif Display";
+font-size: 32px;
+line-height: 36px;
+text-align: center;
+letter-spacing: -0.246154px;
+color: var(--san-juan-blue);
+}
+
+@mixin main-text {
+  font-size: 15px;
+line-height: 28px;
+text-align: center;
+color: var(--light-san-juan-blue);
 }
