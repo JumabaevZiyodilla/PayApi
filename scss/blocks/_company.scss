@@ -1,0 +1,166 @@
+
+.brend{
+  padding: 80px 0px;
+  background-image:url(../images/brand-bg.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brend__list{
+  @include list-rest;
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 40px;
+}
+
+.brend__item{
+  text-align: center;
+}
+
+.brend__info{
+  width: 100%;
+  max-width: 456px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.company__title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 36px;
+text-align: center;
+letter-spacing: -0.246154px;
+color: #FBFCFE;
+}
+
+.company__text{
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 28px;
+text-align: center;
+color: #FBFCFE;
+mix-blend-mode: normal;
+opacity: 0.7;
+}
+
+.company__link{
+  text-decoration: none;
+  padding: 15px 32px;
+  display: inline-block;
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+letter-spacing: -0.115385px;
+color: #FBFCFE;
+border: 1px solid #FBFCFE;
+border-radius: 24px;
+transition: all 0.3s ease
+}
+
+.brend__img--two{
+  display: none;
+}
+
+@include media-min (700px){
+  .brend__list{
+    @include list-rest;
+    margin-bottom: 55px;
+    display: grid;
+    grid-template-columns: 129px 129px 129px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    justify-content: center;
+  }
+  
+}
+
+@include media-min (768px){
+  .brend{
+    background-image:url(../images/brend-t-bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .brend__list{
+    @include list-rest;
+    margin-bottom: 65px;
+    display: grid;
+    grid-template-columns: 129px 129px 129px;
+    grid-row-gap: 55px;
+    grid-column-gap: 60px;
+    justify-content: center;
+  }
+
+  .company__title{
+    font-size: 48px;
+line-height: 56px;
+margin-bottom: 24px;
+  }
+
+  .company__text{
+    margin-bottom: 32px;
+  }
+
+}
+
+@include media-min (1024px){
+  .brend{
+    padding: 100px 0px;
+    background-image:url(../images/brend-d-bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .brend__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .brend__info{
+    width: 100%;
+    max-width: 445px;
+    text-align: start;
+    margin: 0;
+  }
+
+  .company__title{
+    text-align: start;
+  }
+
+  .company__text{
+    text-align: start;
+  }
+
+  .company__link:hover{
+    color: #1B262F;
+    background-color: #FFFFFf;
+  }
+
+  .brend__list{
+    margin-bottom: 0;
+  }
+
+  .brend__img{
+    display: none;
+  }
+
+  .brend__img--two{
+    display: block;
+  }
+
+
+}

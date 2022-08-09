@@ -1,0 +1,119 @@
+
+.site-footer{
+  padding: 40px 0px 55px 0px;
+  background-image: url(../images/footer-m.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-footer__inner{
+  text-align: center;
+}
+
+.site-footer__logo{
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.site-footer__list{
+  @include list-rest;
+  margin-bottom: 40px;
+}
+
+.site-footer__item:not(:last-child){
+  margin-bottom: 31px;
+}
+
+.site-footer__link{
+  text-decoration: none;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  transition: all 0.3s ease
+}
+
+.site__footer__icon{
+  @include list-rest;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon__item:nth-child(2){
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.icon__link{
+  color: #FBFCFE;
+  transition: all 0.3s ease;
+}
+
+@include media-min(500px){
+  .site-footer__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .site-footer__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  
+  .site-footer__item:nth-child(2){
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  
+}
+
+@include media-min(768px){
+
+  .site-footer{
+    padding: 31px 0px 31px 0px;
+    background-image: url(../images/footer-t.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .site-footer__inner{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .site-footer__logo{
+    margin-bottom: 0;
+    margin-right: 65px;
+  }
+
+  .site-footer__list{
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  
+}
+
+@include media-min(1024px){
+  .site-footer{
+    padding: 31px 0px 31px 0px;
+    background-image: url(../images/footer-d.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .site-footer__link:hover{
+    color: #FBFCFE;
+    opacity: 1;
+  }
+
+  .icon__link:hover{
+    color:  #DA6D97;
+  }
+}

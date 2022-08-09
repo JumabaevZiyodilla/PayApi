@@ -1,0 +1,130 @@
+.finance{
+  padding-bottom: 80px;
+}
+
+.finance__list{
+  @include list-rest;
+}
+
+.finance__item{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.finance__item:not(:last-child){
+  margin-bottom: 48px;
+}
+
+.finance__item--one{
+  position: relative;
+}
+
+.finance__item--one::before{
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../images/result-one.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.finance__item--two{
+  position: relative;
+}
+
+.finance__item--two::before{
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../images/result-two.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.finance__item--thre{
+  position: relative;
+}
+
+.finance__item--thre::before{
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../images/result-thre.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.finance__title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.138462px;
+color: #36536B;
+}
+
+.finance__text{
+  margin: 0;
+  font-family: 'Public Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+letter-spacing: -0.115385px;
+color: #6C8294;
+}
+
+@include media-min(768px){
+  .finance__list{
+    display: flex;
+  }
+
+  .finance__item{
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .finance__item--one::before , .finance__item--two::before , .finance__item--thre::before{
+    width: 88px;
+    height: 88px;
+  }
+}
+
+@include media-min(1024px){
+
+  .article__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+
+
+  .finance__item{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .finance__item--one::before , .finance__item--two::before , .finance__item--thre::before{
+    width: 106px;
+    height: 106px;
+  }
+}

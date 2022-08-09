@@ -34,6 +34,12 @@
   }
 }
 
+@mixin media-min ($min-width:600px) {
+  @media only screen and (min-width:$min-width) {
+    @content;
+  }
+}
+
 // #############################################################
 @mixin nav-link {
   font-size: 15px;
@@ -44,6 +50,7 @@
 }
 
 @mixin main-link {
+  padding: 15px 25px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
@@ -77,6 +84,7 @@ border: 1px solid #FBFCFE;
   opacity: 0.5;
 }
 @mixin third-link{
+  padding: 16px 26px;
   font-weight: 700;
 font-size: 15px;
 line-height: 18px;
