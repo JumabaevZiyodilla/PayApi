@@ -207,7 +207,9 @@
         margin: 0px;
         padding-left: 36px;
     }
-
+    .pricing-list__link-tiny{
+        margin: 0px;
+    }
     .pricing-list__item {
         &.pricing-list__item .pricing-list-text__item::before {
             left: calc(50% - 49px);
