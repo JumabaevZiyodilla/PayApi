@@ -50,7 +50,6 @@
 }
 
 @mixin main-link {
-  padding: 15px 25px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
@@ -59,66 +58,108 @@
   background-color: #BA4270;
   box-shadow: 10px 10px 25px -10px #36536b40;
   border-radius: 24px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
-@mixin main-link-hover{
-  opacity: 0.7;
-}
-@mixin main-link-active{
-  opacity: 0.5;
-}
-@mixin second-link{
+
+@mixin second-link {
+  padding: 16px 25px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
-letter-spacing: -0.115385px;
-color: #FBFCFE;
-border: 1px solid #FBFCFE;
-border-radius: 24px;
-}
-@mixin second-link-hover{
-  color: #1B262F;
-  background-color: #FFFFFF;
-border: 1px solid #FBFCFE;
-}
-@mixin second-link-active{
-  opacity: 0.5;
-}
-@mixin third-link{
-  padding: 16px 26px;
-  font-weight: 700;
-font-size: 15px;
-line-height: 18px;
-letter-spacing: -0.115385px;
-color: var(--san-juan-blue);
-border: 1px solid var(--san-juan-blue);
-border-radius: 24px;
-}
-@mixin third-link-hover{
-  background-color: var(--san-juan-blue);
-}
-@mixin third-link-active {
-opacity: 0.5;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+
+  &:hover {
+    color: #1B262F;
+    background-color: #FFFFFF;
+    border: 1px solid #FBFCFE;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
 }
 
-@mixin input-text {
-font-size: 15px;
-line-height: 25px;
-letter-spacing: -0.115385px;
-color: var(--san-juan-blue);
-mix-blend-mode: normal;
+@mixin third-link {
+  padding: 16px 26px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: var(--san-juan-blue);
+  border: 1px solid var(--san-juan-blue);
+  border-radius: 24px;
+  &:hover{
+    color: #fff;
+    background-color: var(--san-juan-blue);
+    transition: all 0.3s ease;
+  }
+  &:active{
+    opacity: 0.5;
+  }
 }
-@mixin  main-title  {
+@mixin mobile-box {
+  width: 100%;
+  max-width: 327px;
+}
+@mixin title-style {
   font-family: "DM Serif Display";
-font-size: 32px;
-line-height: 36px;
-text-align: center;
-letter-spacing: -0.246154px;
-color: var(--san-juan-blue);
+  font-weight: 400;
+}
+@mixin input-text {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: var(--san-juan-blue);
+  mix-blend-mode: normal;
+}
+
+@mixin main-title {
+  font-family: "DM Serif Display";
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: var(--san-juan-blue);
 }
 
 @mixin main-text {
   font-size: 15px;
-line-height: 28px;
-text-align: center;
-color: var(--light-san-juan-blue);
+  line-height: 28px;
+  text-align: center;
+  color: var(--light-san-juan-blue);
+}
+@mixin sub-title {
+  @include title-style;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.184615px;
+  color: #36536B;
+}
+@mixin check {
+  position: absolute;
+  bottom: 9px;
+  left: calc(50% + -74px);
+  width: 15px;
+  height: 11px;
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+@mixin img-style {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
 }

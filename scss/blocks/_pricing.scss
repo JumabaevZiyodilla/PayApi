@@ -1,0 +1,215 @@
+/* SECTION PRICING START */
+.pricing-box__title {
+    margin: 0px 0px 48px 0px;
+    @include main-title;
+}
+
+.pricing-list {
+    width: 100%;
+    max-width: 327px;
+    @include list-rest;
+    margin: 0 auto;
+}
+
+.pricing-list__item {
+    &:not(:last-child) {
+        margin-bottom: 48px;
+    }
+
+    &.pricing-list__item .pricing-list-text__item::before {
+        @include check;
+    }
+
+    &:nth-child(1) .pricing-list-text__item {
+
+        &:nth-child(4):before,
+        &:nth-child(5):before,
+        &:nth-child(6):before,
+        &:nth-child(7):before {
+            background-image: none;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7) {
+            opacity: 0.5;
+        }
+    }
+
+    &:nth-child(2) .pricing-list-text__item {
+
+        &:nth-child(6):before,
+        &:nth-child(7):before {
+            background-image: none;
+        }
+
+        &:nth-child(6),
+        &:nth-child(7) {
+            opacity: 0.5;
+        }
+    }
+}
+
+.pricing-list__title {
+    margin: 0px 0px 81px 0px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.184615px;
+    color: #BA4270;
+}
+
+.pricing-list__text {
+    display: none;
+    margin: 0px 0px 19px 0px;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    color: #6C8294;
+}
+
+.pricing-list__tiny {
+    display: block;
+    max-width: 327px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    text-align: center;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.430769px;
+    color: #36536B;
+    border-bottom: 1px solid #36536b40;
+}
+
+
+.pricing-list-text {
+    margin: 0px 0px 24px 0px;
+    padding-left: 0px;
+    padding-bottom: 16px;
+    list-style-type: none;
+    border-bottom: 1px solid #36536b40;
+}
+
+.pricing-list-text__item {
+    position: relative;
+    width: 96px;
+    margin: 0 auto;
+    padding-left: 13px;
+}
+
+.pricing-list-text__text {
+    margin: 0px 0px 8px 0px;
+    @include main-text;
+    text-align: left;
+    font-size: 16px;
+    color: #36536B;
+}
+
+.pricing-list__link-tiny {
+    display: block;
+    width: 168px;
+    margin: 0 auto;
+}
+
+.pricing-list__link {
+    display: inline-block;
+    @include third-link;
+}
+
+@media only screen and (min-width: 730px) {
+    .pricing-box__title {
+        margin-bottom: 69px;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+    }
+
+    .pricing-list {
+        display: flex;
+        justify-content: space-between;
+        max-width: none;
+    }
+
+    .pricing-list__title {
+        margin-bottom: 13px;
+    }
+
+    .pricing-list__text {
+        display: block;
+    }
+
+    .pricing-list__item {
+        width: 100%;
+        max-width: 223px;
+    }
+
+    .pricing-list__tiny {
+        padding-bottom: 21px;
+        font-size: 48px;
+        letter-spacing: -0.369231px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .pricing-box__title {
+        margin-bottom: 72px;
+        font-size: 56px;
+        letter-spacing: -0.430769px;
+        text-align: left;
+    }
+
+    .pricing-list__item {
+        max-width: 310px;
+    }
+
+    .pricing-list__title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.246154px;
+        text-align: left;
+    }
+
+    .pricing-list__text {
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .pricing-list__tiny {
+        font-size: 56px;
+        letter-spacing: -0.430769px;
+        text-align: left;
+    }
+
+    .pricing-list-text__item {
+        margin: 0px;
+        padding-left: 36px;
+    }
+
+    .pricing-list__item {
+        &.pricing-list__item .pricing-list-text__item::before {
+            left: calc(50% - 49px);
+        }
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .pricing-list__item {
+        max-width: 350px;
+    }
+
+    .pricing-list__text {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+
+/* SECTION PRICING END */
