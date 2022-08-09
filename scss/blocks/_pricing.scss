@@ -1,4 +1,9 @@
 /* SECTION PRICING START */
+
+.pricing{
+    padding: 20px 0px 60px 0px;
+}
+
 .pricing-box__title {
     margin: 0px 0px 48px 0px;
     @include main-title;
@@ -122,7 +127,16 @@
     @include third-link;
 }
 
+.article__form--down{
+    margin-bottom: 0px;
+}
+
 @media only screen and (min-width: 730px) {
+
+    .pricing{
+        padding: 50px 0px 100px 0px;
+    }
+
     .pricing-box__title {
         margin-bottom: 69px;
         font-size: 48px;

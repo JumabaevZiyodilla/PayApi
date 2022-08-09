@@ -1,5 +1,6 @@
 .empower {
     position: relative;
+    padding-top: 20px;
 }
 
 .empower-wrap__title-box {
@@ -15,7 +16,7 @@
 }
 
 .empower-list {
-    margin-bottom: 92px;
+    margin-bottom: 48px;
 }
 
 .empower-list__item {
@@ -113,6 +114,13 @@
     }
 }
 @media only screen and (min-width: 730px) {
+
+    .empower {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+
     .empower-wrap__title-box {
         max-width: 573px;
         margin-bottom: 54px;

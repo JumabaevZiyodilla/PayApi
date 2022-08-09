@@ -7,7 +7,7 @@
 }
 
 .body-contact{
-  background-position: calc(50% - -276px) calc(50% - 561px);
+  background-position: calc(50% + 276px) calc(50% - 427px);
 }
 
 .site-header{
@@ -225,6 +225,12 @@
   }
   
   
+}
+
+@include media-min(768px){
+  .body-contact {
+    background-position: calc(50% + 507px) calc(50% - 264px);
+}
 }
 
 @include media-min(1024px){

@@ -3,6 +3,10 @@ contact-part__title-box {
     margin: 0 auto;
 }
 
+.contact{
+    padding: 20px 0px 80px 0px;
+}
+
 .contact-part__title {
     margin: 0;
     font-family: 'DM Serif Display';
@@ -222,6 +226,8 @@ contact-part__title-box {
 }
 
 @media only screen and (min-width:550px) {
+
+
     .contact-part__title-box {
         max-width: 539px;
         margin: 0 auto;
@@ -252,6 +258,18 @@ contact-part__title-box {
 
     .brands-box__gallery-photo {
         margin: 0 auto;
+    }
+}
+
+@include media-min(768px){
+    .contact{
+        padding: 50px 0px 100px 0px;
+    }
+}
+
+@include media-min(1024px){
+    .contact{
+        padding: 60px 0px 90px 0px;
     }
 }
 
