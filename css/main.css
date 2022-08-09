@@ -1,3 +1,13 @@
+/* VARIABLES */
+:root {
+  --dark-pink: #ba4270;
+  --link-water-white: #e1e1e1;
+  --san-juan-blue: #36536b;
+  --mirage-blue: #1B262F;
+  --charm-pink: #DA6D97;
+  --light-san-juan-blue: #6C8294;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -342,7 +352,7 @@ html {
 }
 
 body {
-  font-family: "Public Sans" "Arial", "sans-serif";
+  font-family: "Public Sans", "Arial", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -1673,6 +1683,9 @@ hr {
   .pricing-list-text__item {
     margin: 0px;
     padding-left: 36px;
+  }
+  .pricing-list__link-tiny {
+    margin: 0px;
   }
   .pricing-list__item.pricing-list__item .pricing-list-text__item::before {
     left: calc(50% - 49px);
