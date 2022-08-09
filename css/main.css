@@ -1355,6 +1355,298 @@ hr {
     text-align: center;
   }
 }
+contact-part__title-box {
+  max-width: 327px;
+  margin: 0 auto;
+}
+
+.contact-part__title {
+  margin: 0;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+}
+
+.contact-part__main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.contact-part__form-box {
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+.contact-form__label {
+  position: relative;
+}
+
+.contact-form__label--check {
+  position: static;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding: 0 20px 16px 20px;
+  margin-bottom: 37px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #9AA8B4;
+}
+.contact-form__input:focus {
+  color: #36536B;
+  opacity: 1;
+  border-bottom: 1px solid #36536B;
+}
+.contact-form__input::-moz-placeholder {
+  opacity: 0.5;
+}
+.contact-form__input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+.contact-form__input::placeholder {
+  opacity: 0.5;
+}
+.contact-form__input:not(:-moz-placeholder-shown):not(:focus):invalid {
+  color: #FF0000;
+  border-bottom: 1px solid #FF0000;
+  opacity: 0.5;
+}
+.contact-form__input:not(:-ms-input-placeholder):not(:focus):invalid {
+  color: #FF0000;
+  border-bottom: 1px solid #FF0000;
+  opacity: 0.5;
+}
+.contact-form__input:not(:placeholder-shown):not(:focus):invalid {
+  color: #FF0000;
+  border-bottom: 1px solid #FF0000;
+  opacity: 0.5;
+}
+.contact-form__input:not(:-moz-placeholder-shown):not(:focus):invalid + .contact-form__input-err {
+  opacity: 1;
+}
+.contact-form__input:not(:-ms-input-placeholder):not(:focus):invalid + .contact-form__input-err {
+  opacity: 1;
+}
+.contact-form__input:not(:placeholder-shown):not(:focus):invalid + .contact-form__input-err {
+  opacity: 1;
+}
+
+.contact-form__input-err {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 123px;
+  opacity: 0;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.0846154px;
+  color: #FF0000;
+  mix-blend-mode: normal;
+  transition: all 0.5s;
+}
+
+.contact-form__message {
+  max-width: 445px;
+  height: 89px;
+  padding: 0 20px;
+  resize: none;
+}
+
+.contact-form__input-tick {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.contact-form__input-check:checked ~ .contact-form__input-tick {
+  background-color: #BA4270;
+  background-image: url("../images/tick-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+}
+.contact-form__input-check:disabled ~ .contact-form__input-tick {
+  background: #36536B;
+  opacity: 0.05;
+}
+
+.contact-form__check-box {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form__check-text-box {
+  max-width: 395px;
+}
+
+.contact-form__check-text {
+  margin: 0 0 0 26px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+}
+
+.contact-form__submit-btn {
+  margin-top: 24px;
+  padding: 15px 50px;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #36536B;
+  border: none;
+  background-color: transparent;
+  border: 1px solid #36536B;
+  border-radius: 24px;
+  transition: all 0.5s;
+}
+.contact-form__submit-btn:hover {
+  color: #FFFFFF;
+  background-color: #36536B;
+}
+.contact-form__submit-btn:active {
+  opacity: 0.5;
+}
+
+.brands-box {
+  margin-top: 81px;
+}
+
+.brands-box__title-box {
+  max-width: 445px;
+  margin: 0 auto;
+}
+
+.brands-box__title {
+  margin: 0;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.184615px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.brands-box__gallery {
+  max-width: 541px;
+  margin: 31px auto 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 106px 120px;
+  grid-template-rows: 15px 22px 27px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 43px;
+}
+
+@media only screen and (min-width: 360px) {
+  .contact-part__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .contact-form__input-tick {
+    width: 24px;
+    height: 24px;
+  }
+  .contact-form__check-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .brands-box__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .contact-part__title-box {
+    max-width: 539px;
+    margin: 0 auto;
+  }
+  .contact-part__title {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+  }
+  .contact-part__main {
+    margin-top: 54px;
+  }
+  .brands-box {
+    margin-top: 64px;
+  }
+  .brands-box__gallery {
+    max-width: 730px;
+    grid-template-columns: repeat(3, 146px);
+    grid-template-rows: repeat(2, 30px);
+    -moz-column-gap: 62px;
+         column-gap: 62px;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+  .brands-box__gallery-photo {
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-part__title-box {
+    max-width: 730px;
+    margin: 0;
+  }
+  .contact-part__title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.430769px;
+    text-align: left;
+  }
+  .contact-part__main {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 43px;
+  }
+  .brands-box__title-box {
+    margin: 0;
+  }
+  .brands-box__title {
+    text-align: left;
+  }
+  .brands-box__gallery-photo {
+    margin: 0;
+  }
+  .brands-box {
+    margin: 0 0 0 124px;
+  }
+}
 .site-footer {
   padding: 40px 0px 55px 0px;
   background-image: url(../images/footer-m.png);
