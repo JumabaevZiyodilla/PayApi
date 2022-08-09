@@ -1,0 +1,218 @@
+.empower {
+    position: relative;
+}
+
+.empower-wrap__title-box {
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto 40px auto;
+}
+
+.empower-wrap__title {
+    margin: 0px;
+    @include main-title;
+    font-size: 29px
+}
+
+.empower-list {
+    margin-bottom: 92px;
+}
+
+.empower-list__item {
+    @include mobile-box;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 48px;
+    }
+}
+
+.empower-list__title {
+    margin: 0px 0px 16px 0px;
+    @include sub-title;
+    text-align: center;
+}
+
+.empower-list__text {
+    margin: 0px;
+    @include main-text;
+    text-align: center;
+    font-size: 13px;
+}
+
+.empower-wrap__img-m {
+    @include img-style;
+}
+
+.empower-wrap__img-t {
+    display: none;
+}
+
+.empower-wrap__img-d {
+    display: none;
+}
+
+
+.empower-list-team {
+    @include mobile-box;
+    margin: 439px auto 48px auto;
+    padding: 16px 0px;
+    border-top: 1px solid #36536b40;
+    border-bottom: 1px solid #36536b40;
+}
+
+.empower-list-team__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.empower-list-team__text {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #36536B;
+    opacity: 0.7;
+}
+
+.empower-list-team__tiny {
+    display: block;
+    @include mobile-box;
+    margin: 0 auto;
+    @include title-style;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -0.430769px;
+    color: #BA4270;
+}
+
+@media only screen and (min-width: 353px) {
+    .empower-list__text {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .empower-wrap__title {
+        font-size: 32px;
+    }
+
+    .empower-list__text {
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 600px){
+    .empower-wrap__img-m {
+        display: none;
+    }
+
+    .empower-wrap__img-t {
+        @include img-style;
+    }
+}
+@media only screen and (min-width: 730px) {
+    .empower-wrap__title-box {
+        max-width: 573px;
+        margin-bottom: 54px;
+    }
+
+    .empower-wrap__title {
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+    }
+
+    .empower-list__item {
+        display: flex;
+        max-width: 689px;
+        margin: 0 auto;
+    }
+    .empower-list__title{
+        margin-right: auto;
+    }
+    .empower-list__text-box {
+        width: 100%;
+        max-width: 456px;
+    }
+
+    .empower-list__text {
+        text-align: left;
+    }
+
+    
+
+    .empower-list-team {
+        display: flex;
+        justify-content: space-between;
+        max-width: none;
+        margin-top: 455px;
+        padding: 0px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .empower-list-team__item {
+        width: 100%;
+        max-width: 223px;
+        padding: 16px 0px;
+        border-top: 1px solid #36536b40;
+        border-bottom: 1px solid #36536b40;
+
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
+    }
+    .empower-list-team__text{
+        text-align: left;
+    }
+    .empower-list-team__tiny {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1000px){
+ 
+    .empower-wrap__title-box {
+        max-width: 730px;
+        margin: 0px 0px 51px 95px;
+    }
+
+    .empower-wrap__title {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.430769px;
+        text-align: left;
+    }
+    
+    .empower-list{
+        margin-left: 95px;
+    }
+    .empower-list__item{
+        max-width: 920px;
+        margin: 0px;
+    }
+    .empower-list__text-box{
+        max-width: 635px;
+    }
+    .empower-wrap__img-t{
+        display: none;
+    }
+    .empower-wrap__img-d{
+        @include img-style;
+    }
+    .empower-list-team {
+        margin-top: 664px;
+    }
+    .empower-list-team__item {
+        max-width: 300px;
+    }
+}
+@media only screen and (min-width: 1150px){
+    .empower{
+        background-image: url("../images/around-bg.svg");
+        background-size: 780px 780px;
+        background-repeat: no-repeat;
+        background-position: calc(50% + -736px) calc(50% + 0px);
+    }
+}
