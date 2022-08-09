@@ -12,10 +12,18 @@ html {
 
 
 body {
-	font-family:  'Arial', 'sans-serif';
+	font-family:"Public Sans"  'Arial', 'sans-serif';
 	margin: 0;
 	padding: 0;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
 
+
+
+.site-main{
+	flex-grow: 1;
 }
 
 img {

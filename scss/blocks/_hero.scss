@@ -143,6 +143,10 @@ line-height: 56px;
   // z-index: 1;
  }
 
+ .form__input:disabled ~ .form__button{
+  background-color: #d380a0;
+ }
+
 }
 
 @include media-min(1024px){
