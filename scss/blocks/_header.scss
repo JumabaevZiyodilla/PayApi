@@ -253,10 +253,19 @@
   .nav__link:hover{
     color: #141e26;
   }
-  
-  .our-link:hover{
-    background-color: #DA6D97;
+
+  .our-link{
+    &:hover{
+      background-color: #DA6D97;
+    }
+
+    &:active{
+      background-color: #cf90a8;
+    }
+
+    cursor: pointer;
   }
+ 
 }
 
 

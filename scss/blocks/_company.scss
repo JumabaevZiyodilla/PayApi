@@ -145,9 +145,19 @@ margin-bottom: 24px;
     text-align: start;
   }
 
-  .company__link:hover{
-    color: #1B262F;
-    background-color: #FFFFFf;
+  .company__link{
+    &:hover{
+      color: #1B262F;
+      background-color: #FFFFFf;
+    }
+
+    &:active{
+      color: #FBFCFE;
+border-color: #FBFCFE;
+background-color: transparent;
+opacity: 0.7;
+    }
+    
   }
 
   .brend__list{
