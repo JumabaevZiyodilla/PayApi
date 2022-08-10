@@ -2013,6 +2013,7 @@ contact-part__title-box {
   border: 1px solid #36536B;
   border-radius: 24px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .contact-form__submit-btn:hover {
   color: #FFFFFF;
