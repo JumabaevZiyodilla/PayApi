@@ -16,6 +16,8 @@
   color: #36536B;
 }
 
+
+
 @include media-min(500px){
   .article__title{
     font-size: 44px;
@@ -48,6 +50,10 @@
 
   .form__button--two{
     right: 0;
+  }
+
+  .form__input--two{
+    padding: 15px 205px 15px 27px;
   }
 
  

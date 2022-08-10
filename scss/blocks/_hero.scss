@@ -48,7 +48,7 @@ color: #36536B;
 .form__input{
   width: 100%;
   max-width: 445px;
-  padding: 15px 160px 15px 27px;
+  padding: 15px  27px;
   border: none;
   background-color: #FBFCFE;
 box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -131,7 +131,7 @@ line-height: 56px;
 
  .form__input{
   margin-bottom: 0;
-  
+  padding: 15px 205px 15px 27px;
  }
 
  .form__button{
@@ -201,6 +201,10 @@ margin-bottom: 31px;
   .form{
     justify-content: flex-start;
   }
+
+  .form__input{
+    padding: 15px 160px 15px 27px;
+   }
 
   .form__button{
     right: 50px;

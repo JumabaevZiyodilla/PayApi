@@ -718,7 +718,7 @@ hr {
 .form__input {
   width: 100%;
   max-width: 445px;
-  padding: 15px 160px 15px 27px;
+  padding: 15px 27px;
   border: none;
   background-color: #FBFCFE;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
@@ -815,6 +815,7 @@ hr {
   }
   .form__input {
     margin-bottom: 0;
+    padding: 15px 205px 15px 27px;
   }
   .form__button {
     width: 100%;
@@ -867,6 +868,9 @@ hr {
   }
   .form {
     justify-content: flex-start;
+  }
+  .form__input {
+    padding: 15px 160px 15px 27px;
   }
   .form__button {
     right: 50px;
@@ -1368,6 +1372,9 @@ hr {
   }
   .form__button--two {
     right: 0;
+  }
+  .form__input--two {
+    padding: 15px 205px 15px 27px;
   }
 }
 @media only screen and (min-width: 1024px) {
